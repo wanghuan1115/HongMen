@@ -1,0 +1,123 @@
+.content-body {
+    position: fixed;
+    top: 1rem;
+    max-width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    background-color: white;
+}
+
+.content-body > div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.content-body > div > img {
+    width: 100%;
+}
+
+.content-body > div > div > p {
+    font-size: 0.14rem;
+    color: #333333;
+    text-align: center;
+    margin-top: 0.67rem;
+}
+
+.content-body > div > div > a {
+    display: block;
+    text-align: center;
+    margin-top: 0.3rem;
+    width: 0.56rem;
+    height: 0.56rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-body > div > div > a > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.content-body > div > div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 1.9rem;
+}
+
+.banner-text-line1 {
+    text-align: center;
+}
+
+.banner-text-line2 {
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.banner-text-line1 > strong {
+    font-size: 0.43rem;
+    color: #393939;
+    white-space: nowrap;
+}
+
+.banner-text-line1 > strong:not(:first-of-type) {
+    margin-left: 0.6rem;
+}
+
+.banner-text-line2 > strong {
+    font-size: 0.54rem;
+    color: #393939;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1200px) {
+    .content-body > div > img {
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content-body > div > div {
+        top: 1.34rem;
+    }
+    .banner-text-line1 {
+        display: block;
+        width: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner-text-line1 > strong {
+        margin-left: 0!important;
+        display: block;
+        text-align: justify;
+        text-align-last: justify;
+    }
+    .banner-text-line2 {
+        display: block;
+        width: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner-text-line2 > strong {
+        display: block;
+        text-align: justify;
+        text-align-last: justify;
+    }
+    .content-body > div > div > p {
+        font-size: 0.14rem;
+        color: #333333;
+        text-align: center;
+        margin-top: 0.8rem;
+    }
+    .content-body > div > div > a {
+        display: block;
+        text-align: center;
+        margin-top: 0.3rem;
+    }
+}

@@ -1,0 +1,223 @@
+.dynamic-content-box {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.8rem;
+}
+
+.dynamic-title {
+    line-height: 1.08rem;
+    font-size: 0.14rem;
+    color: #333;
+    font-weight: normal;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.dynamic-content {
+    padding-top: 0.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.dynamic-content > ul {
+    width: 6.3rem;
+    float: left;
+}
+
+.dynamic-content > ul > li {
+    border-bottom: 1px solid #d8d8d8;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.dynamic-content > ul > li > a {
+    display: block;
+    font-size: 0.12rem;
+    color: #666;
+    line-height: 0.24rem;
+}
+
+.dynamic-content > ul > li > p {
+    font-size: 0.12rem;
+    color: #999;
+    line-height: 0.24rem;
+}
+
+.dynamic-date-box {
+    width: 2.56rem;
+    float: right;
+}
+
+.dynamic-date-box > h6 {
+    font-size: 0.14rem;
+    color: #333;
+    line-height: 0.3rem;
+    font-weight: normal;
+    margin-top: 0.18rem;
+}
+
+.dynamic-date-list {
+    font-size: 0.14rem;
+    color: #333;
+    line-height: 0.3rem;
+    font-weight: normal;
+    margin-top: 0.18rem;
+    text-align: center;
+}
+
+.dynamic-date-list > li {
+    line-height: 0.26rem;
+    margin-top: 0.1rem;
+}
+
+.dynamic-date-list > li > a {
+    display: block;
+    color: #666;
+    font-size: 0.14rem;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.dynamic-date-list > li > a > img {
+    position: absolute;
+    right: 0.1rem;
+    top: 0.1rem;
+    width: 0.1rem;
+}
+
+.dynamic-date-list > li > table {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    border-collapse: collapse;
+    display: none;
+}
+
+.dynamic-date-list > li > table tr {
+    border: 1px solid #e5e5e5;
+    height: 0.38rem;
+}
+
+.dynamic-date-list > li > table td {
+    border: 1px solid #e5e5e5;
+    width: 33.333%;
+    font: 0;
+    height: inherit;
+    line-height: 0.38rem;
+}
+
+.dynamic-date-list > li > table td > a {
+    display: block;
+    height: 100%;
+    font-size: 0.14rem;
+    color: #999999;
+}
+
+.dynamic-content-0 {
+    display: none;
+}
+
+.dynamic-content-1 {
+    display: none;
+}
+
+.dynamic-content-2 {
+    display: none;
+}
+
+.dynamic-content > p {
+    color: #666666;
+    font-size: 0.16rem;
+    line-height: 0.3rem;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.dynamic-content > p:not(:first-of-type) {
+    margin-top: 0.2rem;
+}
+
+.dynamic-date-box-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .dynamic-content-box {
+        padding-top: 0;
+        padding-left: 0.52rem;
+        padding-right: 0.52rem;
+    }
+    .dynamic-title {
+        display: block;
+    }
+    .dynamic-content > ul {
+        width: 100%;
+        float: none;
+    }
+    .dynamic-content > ul > li > a {
+        line-height: 0.4rem;
+    }
+    .dynamic-content > ul > li > p {
+        line-height: 0.3rem;
+    }
+    .dynamic-date-box {
+        display: none;
+    }
+    .dynamic-date-box-mobile {
+        height: 0.36rem;
+        display: block;
+        font-size: 0;
+    }
+    .dynamic-date-box-mobile > div {
+        width: 50%;
+        display: inline-block;
+        height: inherit;
+        font-size: 0;
+        position: relative;
+        background-color: #f0f0f0;
+    }
+    .dynamic-date-box-mobile > div > a {
+        height: inherit;
+        display: block;
+        font-size: 0.14rem;
+        text-align: center;
+        color: #666;
+        position: relative;
+        border: 1px solid #e5e5e5;
+        line-height: 0.36rem;
+    }
+    .dynamic-date-box-mobile > div:first-of-type > a {
+        margin-right: 0.13rem;
+    }
+    .dynamic-date-box-mobile > div:last-of-type > a {
+        margin-left: 0.13rem;
+    }
+    .dynamic-date-box-mobile > div > a > img {
+        position: absolute;
+        right: 0.1rem;
+        top: 0.15rem;
+        width: 0.1rem;
+    }
+    .dynamic-date-box-mobile > div > ul {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        background-color: white;
+        display: none;
+    }
+    .dynamic-date-box-mobile > div > ul > li {
+        line-height: 0.4rem;
+        border: 1px solid #e5e5e5;
+        border-top: 0;
+    }
+    .dynamic-date-box-mobile > div:first-of-type > ul > li {
+        margin-right: 0.13rem;
+    }
+    .dynamic-date-box-mobile > div:last-of-type > ul > li {
+        margin-left: 0.13rem;
+    }
+    .dynamic-date-box-mobile > div > ul > li > a {
+        display: block;
+        font-size: 0.14rem;
+        color: #999;
+    }
+}

@@ -1,0 +1,237 @@
+.content-body {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.area-body {
+    /*    max-width: 86%;*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.section-title {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.14rem;
+    color: #333333;
+    font-weight: normal;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.section-title.no-top-line {
+    border-top: 0;
+}
+
+.area-body > div {
+    position: relative;
+    min-height: 2.8rem;
+    padding-top: 0.44rem;
+}
+
+.area-list {
+    position: absolute;
+    top: 0.44rem;
+    left: 0;
+    font-size: 0.14rem;
+    color: #333;
+}
+
+.area-list > li {
+    line-height: 0.3rem;
+}
+
+.area-list > li:first-of-type {
+    margin-top: 0.1rem;
+}
+
+.area-list > li > a {
+    display: block;
+    color: #666666;
+    font-size: 0.14rem;
+}
+
+.area-list > li > a.active {
+    color: #be383c;
+}
+
+.area-list > li > a:hover {
+    color: #be383c;
+    text-decoration: underline;
+}
+
+.area-box-0 {
+    display: none;
+}
+
+.area-box-1 {
+    display: none;
+}
+
+.area-box-2 {
+    display: none;
+}
+
+.area-box-3 {
+    display: none;
+}
+
+.area-box {
+    margin-left: 2rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.area-box > div {
+    box-sizing: border-box;
+    -webkit-box-flex: 0 0 50%;
+    -moz-box-flex: 0 0 50%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+}
+
+.area-box > div:first-of-type {}
+
+.area-box > div:first-of-type > h5 {
+    font-size: 0.36rem;
+    color: #333;
+    line-height: 0.4rem;
+    margin-bottom: 0.2rem;
+    font-weight: normal;
+}
+
+.area-box > div:first-of-type > p {
+    font-size: 0.18rem;
+    color: #333;
+    line-height: 0.4rem;
+}
+
+.area-box > div:last-of-type {
+    text-align: right;
+}
+
+.area-box > div:last-of-type > div {
+    text-align: left;
+    display: inline-block;
+}
+
+.area-box > div:last-of-type > div > img {
+    width: 3.06rem;
+    height: 2.08rem;
+    display: inline-block;
+}
+
+.area-box > div:last-of-type > div > p {
+    font-size: 0.14rem;
+    color: #666;
+}
+
+.recruit-body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.recruit-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    padding-top: 0.4rem;
+    padding-bottom: 0.16rem;
+}
+
+.recruit-box > div {
+    box-sizing: border-box;
+    -webkit-box-flex: 0 0 50%;
+    -moz-box-flex: 0 0 50%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+}
+
+.recruit-box > div:first-of-type {}
+
+.recruit-box > div:first-of-type > h5 {
+    font-size: 0.74rem;
+    color: #be383c;
+    line-height: 1rem;
+    font-weight: normal;
+}
+
+.recruit-box > div:first-of-type > p {
+    font-size: 0.2rem;
+    color: #000;
+    line-height: 0.4rem;
+}
+
+.recruit-box > div:last-of-type > img {
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-body {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .area-body > div {
+        padding-top: 0;
+        padding-bottom: 0.2rem;
+    }
+    .area-list {
+        top: 0.3rem;
+    }
+    .area-list > li {
+        margin-top: 0 !important;
+        display: inline-block;
+    }
+    .area-list > li {
+        margin-left: 0.26rem;
+    }
+    .area-box {
+        margin-left: 0;
+    }
+    .area-box > div {
+        -webkit-box-flex: 0 0 100%;
+        -moz-box-flex: 0 0 100%;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+    .area-box > div:first-of-type {
+        margin-top: 0.78rem;
+    }
+    .area-box > div:last-of-type > div {
+        display: block;
+    }
+    .area-box > div:last-of-type > div > img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .recruit-box > div {
+        -webkit-box-flex: 0 0 100%;
+        -moz-box-flex: 0 0 100%;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+    .recruit-box > div:first-of-type > h5 {
+        font-size: 0.36rem;
+        line-height: 0.6rem;
+    }
+    .recruit-box > div:last-of-type {
+        margin-top: 0.1rem;
+    }
+}

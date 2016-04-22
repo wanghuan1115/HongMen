@@ -1,0 +1,120 @@
+.team-box {
+    max-width: 1136px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.4rem;
+    padding-top: 0.8rem;
+}
+
+.team-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.team-item {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 0.2rem;
+    -webkit-box-flex: 0 0 25%;
+    -moz-box-flex: 0 0 25%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+}
+
+.team-item:after {
+    content: "";
+    height: 1px;
+    width: 0.45rem;
+    display: block;
+    background-color: #d8d8d8;
+}
+
+.team-item:hover:after {
+    width: 100%;
+    background-color: #be383c;
+}
+
+.team-item .avatar-box {
+    position: relative;
+}
+
+.team-item .avatar-box > img {
+    width: 100%;
+    display: block;
+}
+
+.team-item .avatar-box > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.team-item .avatar-box > div > p {
+    position: absolute;
+    bottom: 0.34rem;
+    left: 0.2rem;
+    font-size: 0.16rem;
+    color: white;
+}
+
+.team-item .item-info {
+    height: 0.78rem;
+    background-color: white;
+    text-align: left;
+}
+
+.team-item .item-info > h3 {
+    line-height: 0.5rem;
+    font-size: 0.22rem;
+    color: #6e6e6e;
+    font-weight: normal;
+}
+
+.team-item .item-info > p {
+    font-size: 0.12rem;
+    color: #999999;
+}
+
+@media screen and (max-width: 1200px) {
+    .team-item {
+        -webkit-box-flex: 0 0 33.333%;
+        -moz-box-flex: 0 0 33.333%;
+        -webkit-flex: 0 0 33.333%;
+        -ms-flex: 0 0 33.333%;
+        flex: 0 0 33.333%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team-item {
+        -webkit-box-flex: 0 0 50%;
+        -moz-box-flex: 0 0 50%;
+        -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-item {
+        -webkit-box-flex: 0 0 100%;
+        -moz-box-flex: 0 0 100%;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        margin-bottom: 0.3rem;
+    }
+    .team-box {
+        padding-top: 0;
+    }
+}

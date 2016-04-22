@@ -1,0 +1,42 @@
+.research-content-box {
+    max-width: 1136px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.1rem;
+}
+
+.research-title {
+    font-size: 0.5rem;
+    color: #b91c22;
+    padding-top: 0.9rem;
+    text-align: center;
+    display: none;
+}
+
+.research-content {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.research-content > p {
+    color: #666666;
+    font-size: 0.16rem;
+    line-height: 0.3rem;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.research-content > p:not(:first-of-type) {
+    margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .research-content-box {
+        padding-top: 0;
+    }
+    .research-title {
+        display: block;
+    }
+}

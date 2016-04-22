@@ -1,0 +1,507 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, "Microsoft Yahei", SimSun;
+    list-style: none;
+    outline: none;
+}
+
+div,
+li,
+img {
+    font-size: 0px;
+}
+
+a {
+    cursor: pointer;
+}
+
+input {
+    border: 0px;
+    outline: medium;
+}
+
+input:active {
+    border: 0px;
+    outline: medium;
+}
+
+.grey-bg {
+    background-color: #e6e6e6;
+}
+
+.content-body {
+    margin-top: 1rem;
+    max-width: 1136px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* 浮动清理 */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    height: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 10000;
+    text-align: right;
+    background-color: white;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.index-button {
+    display: inline-block;
+    width: 2.18rem;
+    height: 1rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 0;
+}
+
+.index-button > img {
+    display: block;
+    width: 100%;
+    margin-top: 0.22rem;
+}
+
+header a:hover {
+    color: #b91c22 !important;
+}
+
+.menu-underline {
+    position: relative;
+}
+
+.menu-underline:hover:after {
+    content: "";
+    position: absolute;
+    top: 0.6rem;
+    height: 2px;
+    background-color: #b91c22;
+    width: 100%;
+    display: block;
+}
+
+.navigation-menu {
+    height: inherit;
+    text-align: right;
+    float: right;
+    line-height: 1rem;
+    font-size: 0;
+    margin-right: 0.4rem;
+}
+
+.navigation-menu > li {
+    height: inherit;
+    line-height: inherit;
+    display: inline-block;
+    font-size: 0;
+}
+
+.navigation-menu > li:not(:first-of-type) {
+    margin-left: 0.4rem;
+}
+
+.navigation-menu > li > a {
+    display: inline-block;
+    color: #333333;
+    font-size: 0.16rem;
+    line-height: inherit;
+}
+
+.navigation-menu > li > a.active {
+    color: #be383c;
+    position: relative;
+}
+
+.navigation-menu > li > a.active:after {
+    content: "";
+    position: absolute;
+    top: 0.6rem;
+    height: 2px;
+    background-color: #b91c22;
+    width: 100%;
+    display: block;
+}
+
+.more-box {
+    margin-left: 0.32rem !important;
+}
+
+.more-box > a > ul {
+    display: inline-block;
+}
+
+.more-box > a > ul > li {
+    display: inline-block;
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 0.04rem;
+    background-color: black;
+}
+
+.more-box > a > ul > li:not(:first-of-type) {
+    margin-left: 0.06rem;
+}
+
+.more-box > a:hover > ul > li {
+    background-color: #b91c22;
+}
+
+.login-box > a {
+    font-weight: normal !important;
+}
+
+.login-box > span {
+    font-size: 0.14rem;
+    color: #333333;
+    margin-left: 0.04rem;
+    margin-right: 0.04rem;
+}
+
+.language-box {
+    margin-left: 0.26rem !important;
+}
+
+.language-box > a {
+    font-weight: normal !important;
+}
+
+.fold-button {
+    float: right;
+    display: none;
+    width: 0.38rem;
+    margin-top: 0.32rem;
+    margin-right: 0.32rem;
+}
+
+.fold-button > img {
+    display: block;
+    width: inherit;
+}
+
+.pop-menu-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #ebebeb;
+    z-index: 99999;
+    display: none;
+    overflow-y: scroll;
+}
+
+.pop-menu-box > a {
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    line-height: 1.35rem;
+    margin-top: 1.48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pop-menu-box > a > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.pop-menu-box > ul {
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+.pop-menu-box > ul > li {
+    line-height: 1rem;
+}
+
+.pop-menu-box > ul > li > a {
+    display: block;
+    font-weight: bold;
+    font-size: 0.4rem;
+    color: #333333;
+    height: 1rem;
+}
+
+.pop-menu-box > ul > li > div {
+    display: block;
+    height: 1rem;
+}
+
+.pop-menu-box > ul > li > div > a {
+    font-weight: bold;
+    font-size: 0.4rem;
+    color: #333333;
+}
+
+.pop-menu-box > ul > li > div > span {
+    font-weight: bold;
+    font-size: 0.4rem;
+    color: #333333;
+    margin-left: 0.06rem;
+    margin-right: 0.06rem;
+}
+
+.pop-menu-box > ul > li > a > img {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.25rem;
+}
+
+.pop-menu-box > ul > li > a.unfold {
+    color: #b91c22;
+    text-decoration: underline;
+}
+
+.pop-menu-box > ul > li > ul {
+    display: none;
+}
+
+.pop-menu-box > ul > li > ul > li {
+    line-height: 0.8rem;
+}
+
+.pop-menu-box > ul > li > ul > li > a {
+    display: block;
+    font-size: 0.36rem;
+    color: #333333;
+}
+
+.pop-menu-box > ul > li > ul > li > a.active {
+    color: #b91c22;
+}
+
+.pop-menu-box > ul > li > ul > li > p {
+    display: block;
+    font-size: 0.48rem;
+    color: #be383c;
+    height: 1rem;
+}
+
+.more-menu-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #ebebeb;
+    z-index: 99999;
+    display: none;
+    overflow-y: scroll;
+}
+
+.more-menu-box > a {
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    line-height: 1.35rem;
+    margin-top: 1.48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.more-menu-box > a > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.more-menu-box > ul {
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+.more-menu-box > ul > li {
+    line-height: 1rem;
+}
+
+.more-menu-box > ul > li > a {
+    display: block;
+    font-size: 0.34rem;
+    color: #333333;
+    height: 1rem;
+}
+
+.more-menu-box > ul > li > a.unfold {
+    color: #b91c22;
+    text-decoration: underline;
+}
+
+.more-menu-box > ul > li > div {
+    display: none;
+}
+
+.more-menu-box > ul > li > div > p {
+    display: block;
+    font-size: 0.48rem;
+    color: #be383c;
+    height: 1rem;
+}
+
+.search-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #ebebeb;
+    z-index: 99999;
+    display: none;
+    overflow-y: scroll;
+}
+
+.search-box > a {
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    line-height: 1.35rem;
+    margin-top: 1.48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-box > a > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.search-title {}
+
+.search-title > img {
+    margin-top: 0.6rem;
+    width: 0.2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-title > h3 {
+    margin-top: 0.6rem;
+    text-align: center;
+    font-size: 0.2rem;
+    color: #be383c;
+    display: none;
+}
+
+footer {
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    max-width: 1136px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #d8d8d8;
+}
+
+footer > img {
+    display: block;
+    width: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second-nav {
+    height: 0.8rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.second-nav > img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.second-nav {
+    height: inherit;
+    line-height: 0.8rem;
+}
+
+.second-nav > li {
+    display: inline-block;
+    height: inherit;
+    margin-left: 0.16rem;
+    margin-right: 0.16rem;
+}
+
+.second-nav > li > a {
+    display: block;
+}
+
+.second-nav > li > a > p {
+    font-size: 0.16rem;
+    color: #666666;
+    line-height: 0.3rem;
+}
+
+.second-nav > li > a.active > p {
+    color: #be383c;
+}
+
+.second-nav > li > a.active > p:after {
+    content: "";
+    background-image: url(../img/second_index.png);
+    background-repeat: no-repeat;
+    width: 0.22rem;
+    height: 0.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media screen and (max-width: 1366px) {
+    .banner_btn > li {
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navigation-menu {
+        display: none;
+    }
+    .fold-button {
+        display: block;
+    }
+    .second-nav {
+        display: none;
+    }
+}
