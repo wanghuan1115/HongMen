@@ -250,18 +250,18 @@ header a:hover {
     height: 1rem;
 }
 
-.pop-menu-box > ul > li > div {
+.more-login-box {
     display: block;
     height: 1rem;
 }
 
-.pop-menu-box > ul > li > div > a {
+.more-login-box > a {
     font-weight: bold;
     font-size: 0.4rem;
     color: #333333;
 }
 
-.pop-menu-box > ul > li > div > span {
+.more-login-box > span {
     font-weight: bold;
     font-size: 0.4rem;
     color: #333333;
@@ -418,6 +418,92 @@ header a:hover {
     display: none;
 }
 
+.search-input {
+    margin-top: 1.5rem;
+    max-width: 8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #999;
+}
+
+.search-input > input {
+    font-size: 0.8rem;
+    color: #333;
+    width: 100%;
+    line-height: 0.8rem;
+    background-color: transparent;
+    text-align: center;
+}
+
+.search-result-box {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+
+.search-list {
+    width: 50%;
+}
+
+.search-list-0 {
+    float: left;
+}
+
+.search-list-1 {
+    float: right;
+}
+
+.search-list > li {
+    margin-top: 0.7rem;
+}
+
+.search-list-0 > li {
+    margin-right: 0.2rem;
+}
+
+.search-list-1 > li {
+    margin-left: 0.2rem;
+}
+
+.search-list > li {
+    position: relative;
+}
+
+.search-list > li > div:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.34rem;
+    height: inherit;
+}
+
+.search-list > li > div:first-of-type > div {
+    width: 0.12rem;
+    height: 0.36rem;
+    background-color: #be383c;
+    float: left;
+    margin-top: 0.06rem;
+}
+
+.search-list > li > div:last-of-type {
+    margin-left: 0.36rem;
+}
+
+.search-list > li > div:last-of-type > h6 {
+    font-size: 0.36rem;
+    color: #333;
+    font-weight: normal;
+}
+
+.search-list > li > div:last-of-type > a {
+    font-size: 0.14rem;
+    color: #999;
+    margin-top: 0.3rem;
+    display: inline-block;
+}
+
 footer {
     padding-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -488,6 +574,86 @@ footer > img {
     display: block;
 }
 
+.feedback-box {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    height: auto !important;
+    display: none;
+}
+
+.feedback-box> h3 {
+    font-size: 0.18rem;
+    color: #333;
+    line-height: 0.3rem;
+    font-weight: normal;
+}
+
+.feedback-box> h4 {
+    line-height: 0.26rem;
+    font-size: 0.14rem;
+    color: #333;
+    font-weight: normal;
+}
+
+.feedback-box> ul {
+    margin-top: 0.2rem;
+}
+
+.feedback-box> ul > li {
+    position: relative;
+    padding-left: 1.1rem;
+    line-height: 0.4rem;
+    margin-top: 0.16rem;
+}
+
+.feedback-box> ul > li > h6 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.14rem;
+    color: #333;
+    font-weight: normal;
+}
+
+.feedback-box> ul > li > h6 > span {
+    font-size: 0.14rem;
+    color: red;
+    margin-right: 0.04rem;
+}
+
+.feedback-box> ul > li > div {
+    background-color: white;
+    max-width: 3.6rem;
+}
+
+.feedback-box> ul > li:last-of-type > div {
+    max-width: 100%;
+}
+
+.feedback-box> ul > li > div > input {
+    background-color: transparent;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 0.14rem;
+    color: #999;
+}
+
+.feedback-box> ul > li > div > textarea {
+    resize: none;
+    width: 100%;
+    height: 1.4rem;
+    font-size: 0.14rem;
+    color: #333333;
+    background-color: transparent;
+    border: 0;
+    font-size: 0.14rem;
+    color: #999;
+}
+
 @media screen and (max-width: 1366px) {
     .banner_btn > li {
         padding-left: 2%;
@@ -503,5 +669,33 @@ footer > img {
     }
     .second-nav {
         display: none;
+    }
+    .search-input {
+        margin-top: 0.5rem;
+        max-width: 70%;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid #999;
+    }
+    .search-input > input {
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .search-list-1 {
+        display: none;
+    }
+    .search-list-0 {
+        width: 100%;
+    }
+    .feedback-box {
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+    .feedback-box> ul > li > div {
+        max-width: 100%;
     }
 }

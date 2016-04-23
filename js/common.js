@@ -57,7 +57,7 @@ function bindEvent() {
         $(".more-menu-box").show();
     })
 
-    $("#search-button").click(function () {
+    $(".search-button").click(function () {
         $(".search-box").show();
     })
 
@@ -87,6 +87,10 @@ function bindEvent() {
             allItem.eq(i).removeClass("unfold");
             allItem.eq(i).siblings("ul").hide();
         }
+    })
+
+    $(".feedback-button").click(function () {
+        $(".feedback-box").toggle();
     })
 
     $(".pop-item").click(function () {
@@ -296,4 +300,13 @@ function noMoreCentent() {
             });
         }
     });
+}
+
+// 瀑布流，返回高度较小的，当高度相等时，返回第一个。
+function compareWaterfall() {
+    if ($(".search-list-1").height() >= $(".search-list-0").height()) {
+        return 0;
+    } else {
+        return 1;
+    }
 }
