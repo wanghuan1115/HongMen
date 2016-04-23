@@ -89,10 +89,6 @@ function bindEvent() {
         }
     })
 
-    $(".feedback-button").click(function () {
-        $(".feedback-box").toggle();
-    })
-
     $(".pop-item").click(function () {
         var allItem = $(".pop-item");
         for (var i = 0; i < allItem.length; i++) {
@@ -103,6 +99,16 @@ function bindEvent() {
         }
         $(this).siblings("ul").toggle();
         if ($(this).siblings("ul").is(":visible")) {
+            $(this).addClass("unfold");
+        } else {
+            $(this).removeClass("unfold");
+        }
+    })
+
+    $(".feedback-button").click(function () {
+        $(".feedback-box").toggle();
+        console.log($(".feedback-box").is(":visible"))
+        if ($(".feedback-box").is(":visible")) {
             $(this).addClass("unfold");
         } else {
             $(this).removeClass("unfold");
